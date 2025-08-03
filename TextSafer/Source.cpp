@@ -2,13 +2,14 @@
 #include "AtbashCipher.h"
 #include "VigenereCipher.h"
 #include "SimpleSubstitutionCipher.h"
+#include "ColumnarTranspositionCipher.h"
 #include <cstdlib>
 
 using namespace System;
 
 int main(array<String^>^) {
 
-	SimpleSubstitutionCipher^ temp = gcnew SimpleSubstitutionCipher();
+	Cipher^ temp = gcnew ColumnarTranspositionCipher("12345");
 	String^ encryptedText = temp->Encrypt("My name is Tharinda");
 	Console::WriteLine("Encrypt : " + encryptedText);
 	//Console::WriteLine("key : " + temp->GenerateRandomKey());
