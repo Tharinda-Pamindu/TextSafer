@@ -23,8 +23,8 @@ public:
 		}
 	};
 
-	String^ encrypt(String^ plainText) override;
-	String^ decrypt(String^ cipherText) override;
+	String^ Encrypt(String^ plainText) override;
+	String^ Decrypt(String^ cipherText) override;
 
 };
 

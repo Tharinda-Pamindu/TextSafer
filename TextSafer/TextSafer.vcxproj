@@ -22,11 +22,15 @@
     <ClInclude Include="AtbashCipher.h" />
     <ClInclude Include="CaesarCipher.h" />
     <ClInclude Include="Cipher.h" />
+    <ClInclude Include="ColumnarTranspositionCipher.h" />
+    <ClInclude Include="SimpleSubstitutionCipher.h" />
     <ClInclude Include="VigenereCipher.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AtbashCipher.cpp" />
     <ClCompile Include="CaesarCipher.cpp" />
+    <ClCompile Include="ColumnarTranspositionCipher.cpp" />
+    <ClCompile Include="SimpleSubstitutionCipher.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="VigenereCipher.cpp" />
   </ItemGroup>
