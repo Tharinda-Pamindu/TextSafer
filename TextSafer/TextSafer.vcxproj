@@ -19,10 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AtbashCipher.h" />
     <ClInclude Include="CaesarCipher.h" />
     <ClInclude Include="Cipher.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AtbashCipher.cpp" />
     <ClCompile Include="CaesarCipher.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
