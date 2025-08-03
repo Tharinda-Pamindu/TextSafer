@@ -21,12 +21,18 @@
     <ClInclude Include="CaesarCipher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="AtbashCipher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CaesarCipher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AtbashCipher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
