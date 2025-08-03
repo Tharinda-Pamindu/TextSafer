@@ -1,6 +1,6 @@
 #include "VigenereCipher.h"
 
-String^ VigenereCipher::encrypt(String^ plainText)
+String^ VigenereCipher::Encrypt(String^ plainText)
 {
 	if (String::IsNullOrEmpty(key)) {
 		return plainText;
@@ -30,7 +30,7 @@ String^ VigenereCipher::encrypt(String^ plainText)
 	return cipherText;
 }
 
-String^ VigenereCipher::decrypt(String^ cipherText)
+String^ VigenereCipher::Decrypt(String^ cipherText)
 {
 	if (String::IsNullOrEmpty(key) || String::IsNullOrEmpty(cipherText)) {
 		return cipherText;

@@ -1,6 +1,6 @@
 #include "AtbashCipher.h"
 
-String^ AtbashCipher::encrypt(String^ plainText)
+String^ AtbashCipher::Encrypt(String^ plainText)
 {
 	String^ cipherText = "";
 
@@ -23,7 +23,7 @@ String^ AtbashCipher::encrypt(String^ plainText)
 
 }
 
-String^ AtbashCipher::decrypt(String^ cipherText)
+String^ AtbashCipher::Decrypt(String^ cipherText)
 {
-	return encrypt(cipherText);
+	return Encrypt(cipherText);
 }

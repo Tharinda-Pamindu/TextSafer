@@ -1,8 +1,8 @@
 #pragma once
 #include "Cipher.h"
-public ref class AtbashCipher : public Cipher
+public ref class ColumnarTranspositionCipher : public Cipher
 {
-public :
+public : 
 	String^ Encrypt(String^ plainText) override;
 	String^ Decrypt(String^ cipherText) override;
 };

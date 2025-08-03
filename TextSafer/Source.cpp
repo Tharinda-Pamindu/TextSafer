@@ -1,16 +1,19 @@
 #include "CaesarCipher.h"
 #include "AtbashCipher.h"
 #include "VigenereCipher.h"
-#include<cstdlib>
+#include "SimpleSubstitutionCipher.h"
+#include <cstdlib>
 
 using namespace System;
 
 int main(array<String^>^) {
 
-	Cipher^ temp = gcnew VigenereCipher("KEY");
-	String^ encryptedText = temp->encrypt("My name is Tharinda");
-	Console::WriteLine("Encrypt : "+encryptedText);
-	Console::WriteLine("Decrypt : "+temp->decrypt(encryptedText));
+	SimpleSubstitutionCipher^ temp = gcnew SimpleSubstitutionCipher();
+	String^ encryptedText = temp->Encrypt("My name is Tharinda");
+	Console::WriteLine("Encrypt : " + encryptedText);
+	//Console::WriteLine("key : " + temp->GenerateRandomKey());
+	
+	Console::WriteLine("Decrypt : " + temp->Decrypt(encryptedText));
 
 	while (true) {
 		Console::ReadLine();

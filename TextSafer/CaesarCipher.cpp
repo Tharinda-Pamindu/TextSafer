@@ -1,6 +1,6 @@
 #include "CaesarCipher.h"
 
-String^ CaesarCipher::encrypt(String^ plainText) {
+String^ CaesarCipher::Encrypt(String^ plainText) {
 
 	String^ cipherText = "";
 
@@ -28,7 +28,7 @@ String^ CaesarCipher::encrypt(String^ plainText) {
 	return cipherText;
 };
 
-String^ CaesarCipher::decrypt(String^ cipherText) {
+String^ CaesarCipher::Decrypt(String^ cipherText) {
 
 	String^ plainText = "";
 
