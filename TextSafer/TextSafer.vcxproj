@@ -23,6 +23,9 @@
     <ClInclude Include="CaesarCipher.h" />
     <ClInclude Include="Cipher.h" />
     <ClInclude Include="ColumnarTranspositionCipher.h" />
+    <ClInclude Include="DashBoard.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="SimpleSubstitutionCipher.h" />
     <ClInclude Include="SimpleXORCipher.h" />
     <ClInclude Include="VigenereCipher.h" />
@@ -31,10 +34,26 @@
     <ClCompile Include="AtbashCipher.cpp" />
     <ClCompile Include="CaesarCipher.cpp" />
     <ClCompile Include="ColumnarTranspositionCipher.cpp" />
+    <ClCompile Include="DashBoard.cpp" />
     <ClCompile Include="SimpleSubstitutionCipher.cpp" />
     <ClCompile Include="SimpleXORCipher.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="VigenereCipher.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\icon1.jpg" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
