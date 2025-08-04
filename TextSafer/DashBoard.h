@@ -65,6 +65,7 @@ namespace TextSafer {
 	private: System::Windows::Forms::Button^ btnCaesarDecrypt;
 
 	private: System::Windows::Forms::Button^ btnCaesarEncrypt;
+	private: System::Windows::Forms::Button^ btnCopyCaeser;
 
 
 
@@ -93,6 +94,7 @@ namespace TextSafer {
 			this->btnAtbash = (gcnew System::Windows::Forms::Button());
 			this->btnCaesar = (gcnew System::Windows::Forms::Button());
 			this->tabCaesar = (gcnew System::Windows::Forms::GroupBox());
+			this->btnCopyCaeser = (gcnew System::Windows::Forms::Button());
 			this->btnCaesarDecrypt = (gcnew System::Windows::Forms::Button());
 			this->btnCaesarEncrypt = (gcnew System::Windows::Forms::Button());
 			this->lblOutputCaesar = (gcnew System::Windows::Forms::Label());
@@ -211,6 +213,7 @@ namespace TextSafer {
 			// 
 			// tabCaesar
 			// 
+			this->tabCaesar->Controls->Add(this->btnCopyCaeser);
 			this->tabCaesar->Controls->Add(this->btnCaesarDecrypt);
 			this->tabCaesar->Controls->Add(this->btnCaesarEncrypt);
 			this->tabCaesar->Controls->Add(this->lblOutputCaesar);
@@ -227,6 +230,16 @@ namespace TextSafer {
 			this->tabCaesar->TabStop = false;
 			this->tabCaesar->Text = L"Caesar Cipher";
 			// 
+			// btnCopyCaeser
+			// 
+			this->btnCopyCaeser->Location = System::Drawing::Point(478, 291);
+			this->btnCopyCaeser->Name = L"btnCopyCaeser";
+			this->btnCopyCaeser->Size = System::Drawing::Size(100, 43);
+			this->btnCopyCaeser->TabIndex = 8;
+			this->btnCopyCaeser->Text = L"Copy";
+			this->btnCopyCaeser->UseVisualStyleBackColor = true;
+			this->btnCopyCaeser->Click += gcnew System::EventHandler(this, &DashBoard::btnCopyCaeser_Click);
+			// 
 			// btnCaesarDecrypt
 			// 
 			this->btnCaesarDecrypt->AutoSize = true;
@@ -236,6 +249,7 @@ namespace TextSafer {
 			this->btnCaesarDecrypt->TabIndex = 7;
 			this->btnCaesarDecrypt->Text = L"Decrypt";
 			this->btnCaesarDecrypt->UseVisualStyleBackColor = true;
+			this->btnCaesarDecrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnCaesarDecrypt_Click);
 			// 
 			// btnCaesarEncrypt
 			// 
@@ -343,5 +357,7 @@ namespace TextSafer {
 	private: void InitializeSetup();
 	private: System::Void btnCaesar_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void btnCaesarEncrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnCopyCaeser_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnCaesarDecrypt_Click(System::Object^ sender, System::EventArgs^ e);
 	};
 }
