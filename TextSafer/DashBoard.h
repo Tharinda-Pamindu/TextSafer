@@ -78,15 +78,15 @@ namespace TextSafer {
 
 
 
-	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::Button^ button4;
-	private: System::Windows::Forms::Button^ button5;
-	private: System::Windows::Forms::Button^ button6;
-	private: System::Windows::Forms::Label^ label4;
-	private: System::Windows::Forms::NumericUpDown^ numericUpDown2;
-	private: System::Windows::Forms::Label^ label5;
-	private: System::Windows::Forms::Label^ label6;
-	private: System::Windows::Forms::TextBox^ textBox2;
+
+
+
+
+
+
+
+
+
 	private: System::Windows::Forms::GroupBox^ tabCaesar;
 	private: System::Windows::Forms::Button^ btnCaesarCopy;
 
@@ -102,6 +102,95 @@ namespace TextSafer {
 
 	private: System::Windows::Forms::Label^ lblCaesarText;
 	private: System::Windows::Forms::TextBox^ txtCaesarText;
+	private: System::Windows::Forms::GroupBox^ tabAtBash;
+	private: System::Windows::Forms::Button^ btnAtBashCopy;
+
+	private: System::Windows::Forms::Button^ btnAtBashDecrypt;
+
+	private: System::Windows::Forms::Button^ btnAtBashEncrypt;
+
+	private: System::Windows::Forms::Label^ lblAtBashOutput;
+
+
+
+
+	private: System::Windows::Forms::Label^ lblAtBashText;
+	private: System::Windows::Forms::TextBox^ txtAtBashText;
+	private: System::Windows::Forms::GroupBox^ tabVigenere;
+	private: System::Windows::Forms::Button^ btnVigenereCopy;
+
+	private: System::Windows::Forms::Button^ btnVigenereDecrypt;
+
+	private: System::Windows::Forms::Button^ btnVigenereEncrypt;
+
+	private: System::Windows::Forms::Label^ lblVigenereOutput;
+
+
+	private: System::Windows::Forms::Label^ lblVigenereKey;
+
+	private: System::Windows::Forms::Label^ lblVigenereText;
+	private: System::Windows::Forms::TextBox^ txtVigenereText;
+	private: System::Windows::Forms::TextBox^ txtVigenereKey;
+	private: System::Windows::Forms::GroupBox^ tabSubstitution;
+	private: System::Windows::Forms::Button^ btnSubstitutionCopy;
+
+	private: System::Windows::Forms::Button^ btnSubstitutionDecrypt;
+
+	private: System::Windows::Forms::Button^ btnSubstitutionEncrypt;
+
+	private: System::Windows::Forms::Label^ lblSubstitutionOutput;
+
+
+	private: System::Windows::Forms::Label^ lblSubstitutionKey;
+
+	private: System::Windows::Forms::Label^ lblSubstitutionText;
+	private: System::Windows::Forms::TextBox^ txtSubstitutionText;
+	private: System::Windows::Forms::TextBox^ txtSubstitutionKey;
+	private: System::Windows::Forms::GroupBox^ tabColumnarTransposition;
+
+	private: System::Windows::Forms::Button^ btnColumnarTranspositionCopy;
+	private: System::Windows::Forms::Button^ btnColumnarTranspositionDecrypt;
+
+
+	private: System::Windows::Forms::Button^ btnColumnarTranspositionEncrypt;
+	private: System::Windows::Forms::Label^ lblColumnarTranspositionOutput;
+	private: System::Windows::Forms::Label^ lblColumnarTranspositionKey;
+
+
+
+
+	private: System::Windows::Forms::Label^ lblColumnarTranspositionText;
+	private: System::Windows::Forms::TextBox^ txtColumnarTranspositionText;
+	private: System::Windows::Forms::TextBox^ txtColumnarTranspositionKey;
+	private: System::Windows::Forms::GroupBox^ tabSimpleXOR;
+	private: System::Windows::Forms::Button^ btnSimpleXORCopy;
+
+
+	private: System::Windows::Forms::Button^ btnSimpleXORDecrypt;
+
+	private: System::Windows::Forms::Button^ btnSimpleXOREncrypt;
+
+	private: System::Windows::Forms::Label^ lblSimpleXOROutput;
+	private: System::Windows::Forms::Label^ lblSimpleXORKey;
+
+
+
+	private: System::Windows::Forms::Label^ lblSimpleXORText;
+	private: System::Windows::Forms::TextBox^ txtSimpleXORText;
+	private: System::Windows::Forms::TextBox^ txtSimpleXORKey;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -134,15 +223,6 @@ namespace TextSafer {
 			this->btnAtbash = (gcnew System::Windows::Forms::Button());
 			this->btnCaesar = (gcnew System::Windows::Forms::Button());
 			this->tabWelcome = (gcnew System::Windows::Forms::GroupBox());
-			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->button5 = (gcnew System::Windows::Forms::Button());
-			this->button6 = (gcnew System::Windows::Forms::Button());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->numericUpDown2 = (gcnew System::Windows::Forms::NumericUpDown());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
-			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->tabCaesar = (gcnew System::Windows::Forms::GroupBox());
 			this->btnCaesarCopy = (gcnew System::Windows::Forms::Button());
 			this->btnCaesarDecrypt = (gcnew System::Windows::Forms::Button());
@@ -152,11 +232,57 @@ namespace TextSafer {
 			this->lblCaesarShiftKey = (gcnew System::Windows::Forms::Label());
 			this->lblCaesarText = (gcnew System::Windows::Forms::Label());
 			this->txtCaesarText = (gcnew System::Windows::Forms::TextBox());
+			this->tabAtBash = (gcnew System::Windows::Forms::GroupBox());
+			this->btnAtBashCopy = (gcnew System::Windows::Forms::Button());
+			this->btnAtBashDecrypt = (gcnew System::Windows::Forms::Button());
+			this->btnAtBashEncrypt = (gcnew System::Windows::Forms::Button());
+			this->lblAtBashOutput = (gcnew System::Windows::Forms::Label());
+			this->lblAtBashText = (gcnew System::Windows::Forms::Label());
+			this->txtAtBashText = (gcnew System::Windows::Forms::TextBox());
+			this->tabVigenere = (gcnew System::Windows::Forms::GroupBox());
+			this->txtVigenereKey = (gcnew System::Windows::Forms::TextBox());
+			this->btnVigenereCopy = (gcnew System::Windows::Forms::Button());
+			this->btnVigenereDecrypt = (gcnew System::Windows::Forms::Button());
+			this->btnVigenereEncrypt = (gcnew System::Windows::Forms::Button());
+			this->lblVigenereOutput = (gcnew System::Windows::Forms::Label());
+			this->lblVigenereKey = (gcnew System::Windows::Forms::Label());
+			this->lblVigenereText = (gcnew System::Windows::Forms::Label());
+			this->txtVigenereText = (gcnew System::Windows::Forms::TextBox());
+			this->tabSubstitution = (gcnew System::Windows::Forms::GroupBox());
+			this->txtSubstitutionKey = (gcnew System::Windows::Forms::TextBox());
+			this->btnSubstitutionCopy = (gcnew System::Windows::Forms::Button());
+			this->btnSubstitutionDecrypt = (gcnew System::Windows::Forms::Button());
+			this->btnSubstitutionEncrypt = (gcnew System::Windows::Forms::Button());
+			this->lblSubstitutionOutput = (gcnew System::Windows::Forms::Label());
+			this->lblSubstitutionKey = (gcnew System::Windows::Forms::Label());
+			this->lblSubstitutionText = (gcnew System::Windows::Forms::Label());
+			this->txtSubstitutionText = (gcnew System::Windows::Forms::TextBox());
+			this->tabColumnarTransposition = (gcnew System::Windows::Forms::GroupBox());
+			this->txtColumnarTranspositionKey = (gcnew System::Windows::Forms::TextBox());
+			this->btnColumnarTranspositionCopy = (gcnew System::Windows::Forms::Button());
+			this->btnColumnarTranspositionDecrypt = (gcnew System::Windows::Forms::Button());
+			this->btnColumnarTranspositionEncrypt = (gcnew System::Windows::Forms::Button());
+			this->lblColumnarTranspositionOutput = (gcnew System::Windows::Forms::Label());
+			this->lblColumnarTranspositionKey = (gcnew System::Windows::Forms::Label());
+			this->lblColumnarTranspositionText = (gcnew System::Windows::Forms::Label());
+			this->txtColumnarTranspositionText = (gcnew System::Windows::Forms::TextBox());
+			this->tabSimpleXOR = (gcnew System::Windows::Forms::GroupBox());
+			this->btnSimpleXORCopy = (gcnew System::Windows::Forms::Button());
+			this->btnSimpleXORDecrypt = (gcnew System::Windows::Forms::Button());
+			this->btnSimpleXOREncrypt = (gcnew System::Windows::Forms::Button());
+			this->lblSimpleXOROutput = (gcnew System::Windows::Forms::Label());
+			this->lblSimpleXORKey = (gcnew System::Windows::Forms::Label());
+			this->lblSimpleXORText = (gcnew System::Windows::Forms::Label());
+			this->txtSimpleXORText = (gcnew System::Windows::Forms::TextBox());
+			this->txtSimpleXORKey = (gcnew System::Windows::Forms::TextBox());
 			this->tableLayoutPanel1->SuspendLayout();
-			this->groupBox1->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->BeginInit();
 			this->tabCaesar->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txtCaesarShiftKey))->BeginInit();
+			this->tabAtBash->SuspendLayout();
+			this->tabVigenere->SuspendLayout();
+			this->tabSubstitution->SuspendLayout();
+			this->tabColumnarTransposition->SuspendLayout();
+			this->tabSimpleXOR->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// tableLayoutPanel1
@@ -278,99 +404,6 @@ namespace TextSafer {
 			this->tabWelcome->TabIndex = 1;
 			this->tabWelcome->TabStop = false;
 			// 
-			// groupBox1
-			// 
-			this->groupBox1->Controls->Add(this->button4);
-			this->groupBox1->Controls->Add(this->button5);
-			this->groupBox1->Controls->Add(this->button6);
-			this->groupBox1->Controls->Add(this->label4);
-			this->groupBox1->Controls->Add(this->numericUpDown2);
-			this->groupBox1->Controls->Add(this->label5);
-			this->groupBox1->Controls->Add(this->label6);
-			this->groupBox1->Controls->Add(this->textBox2);
-			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->groupBox1->Location = System::Drawing::Point(15, 449);
-			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(613, 361);
-			this->groupBox1->TabIndex = 1;
-			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"At Bash Cipher";
-			// 
-			// button4
-			// 
-			this->button4->Location = System::Drawing::Point(478, 291);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(100, 43);
-			this->button4->TabIndex = 8;
-			this->button4->Text = L"Copy";
-			this->button4->UseVisualStyleBackColor = true;
-			// 
-			// button5
-			// 
-			this->button5->AutoSize = true;
-			this->button5->Location = System::Drawing::Point(166, 291);
-			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(115, 43);
-			this->button5->TabIndex = 7;
-			this->button5->Text = L"Decrypt";
-			this->button5->UseVisualStyleBackColor = true;
-			// 
-			// button6
-			// 
-			this->button6->AutoSize = true;
-			this->button6->Location = System::Drawing::Point(33, 291);
-			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(107, 43);
-			this->button6->TabIndex = 6;
-			this->button6->Text = L"Encrypt";
-			this->button6->UseVisualStyleBackColor = true;
-			// 
-			// label4
-			// 
-			this->label4->ForeColor = System::Drawing::Color::ForestGreen;
-			this->label4->Location = System::Drawing::Point(34, 179);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(545, 95);
-			this->label4->TabIndex = 5;
-			this->label4->Text = L"label4";
-			// 
-			// numericUpDown2
-			// 
-			this->numericUpDown2->Location = System::Drawing::Point(147, 133);
-			this->numericUpDown2->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 26, 0, 0, 0 });
-			this->numericUpDown2->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
-			this->numericUpDown2->Name = L"numericUpDown2";
-			this->numericUpDown2->Size = System::Drawing::Size(56, 29);
-			this->numericUpDown2->TabIndex = 4;
-			this->numericUpDown2->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
-			// 
-			// label5
-			// 
-			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(30, 135);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(97, 22);
-			this->label5->TabIndex = 3;
-			this->label5->Text = L"Shift Key";
-			// 
-			// label6
-			// 
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(30, 40);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(50, 22);
-			this->label6->TabIndex = 2;
-			this->label6->Text = L"Text";
-			// 
-			// textBox2
-			// 
-			this->textBox2->Location = System::Drawing::Point(147, 40);
-			this->textBox2->Multiline = true;
-			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(432, 77);
-			this->textBox2->TabIndex = 0;
-			// 
 			// tabCaesar
 			// 
 			this->tabCaesar->Controls->Add(this->btnCaesarCopy);
@@ -388,7 +421,7 @@ namespace TextSafer {
 			this->tabCaesar->Size = System::Drawing::Size(613, 361);
 			this->tabCaesar->TabIndex = 2;
 			this->tabCaesar->TabStop = false;
-			this->tabCaesar->Text = L"At Bash Cipher";
+			this->tabCaesar->Text = L"Caesar Cipher";
 			// 
 			// btnCaesarCopy
 			// 
@@ -467,14 +500,465 @@ namespace TextSafer {
 			this->txtCaesarText->Size = System::Drawing::Size(432, 77);
 			this->txtCaesarText->TabIndex = 0;
 			// 
+			// tabAtBash
+			// 
+			this->tabAtBash->Controls->Add(this->btnAtBashCopy);
+			this->tabAtBash->Controls->Add(this->btnAtBashDecrypt);
+			this->tabAtBash->Controls->Add(this->btnAtBashEncrypt);
+			this->tabAtBash->Controls->Add(this->lblAtBashOutput);
+			this->tabAtBash->Controls->Add(this->lblAtBashText);
+			this->tabAtBash->Controls->Add(this->txtAtBashText);
+			this->tabAtBash->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabAtBash->Location = System::Drawing::Point(228, 11);
+			this->tabAtBash->Name = L"tabAtBash";
+			this->tabAtBash->Size = System::Drawing::Size(613, 361);
+			this->tabAtBash->TabIndex = 9;
+			this->tabAtBash->TabStop = false;
+			this->tabAtBash->Text = L"At Bash Cipher";
+			// 
+			// btnAtBashCopy
+			// 
+			this->btnAtBashCopy->Location = System::Drawing::Point(478, 291);
+			this->btnAtBashCopy->Name = L"btnAtBashCopy";
+			this->btnAtBashCopy->Size = System::Drawing::Size(100, 43);
+			this->btnAtBashCopy->TabIndex = 8;
+			this->btnAtBashCopy->Text = L"Copy";
+			this->btnAtBashCopy->UseVisualStyleBackColor = true;
+			this->btnAtBashCopy->Click += gcnew System::EventHandler(this, &DashBoard::btnAtBashCopy_Click);
+			// 
+			// btnAtBashDecrypt
+			// 
+			this->btnAtBashDecrypt->AutoSize = true;
+			this->btnAtBashDecrypt->Location = System::Drawing::Point(166, 291);
+			this->btnAtBashDecrypt->Name = L"btnAtBashDecrypt";
+			this->btnAtBashDecrypt->Size = System::Drawing::Size(115, 43);
+			this->btnAtBashDecrypt->TabIndex = 7;
+			this->btnAtBashDecrypt->Text = L"Decrypt";
+			this->btnAtBashDecrypt->UseVisualStyleBackColor = true;
+			this->btnAtBashDecrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnAtBashDecrypt_Click);
+			// 
+			// btnAtBashEncrypt
+			// 
+			this->btnAtBashEncrypt->AutoSize = true;
+			this->btnAtBashEncrypt->Location = System::Drawing::Point(33, 291);
+			this->btnAtBashEncrypt->Name = L"btnAtBashEncrypt";
+			this->btnAtBashEncrypt->Size = System::Drawing::Size(107, 43);
+			this->btnAtBashEncrypt->TabIndex = 6;
+			this->btnAtBashEncrypt->Text = L"Encrypt";
+			this->btnAtBashEncrypt->UseVisualStyleBackColor = true;
+			this->btnAtBashEncrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnAtBashEncrypt_Click);
+			// 
+			// lblAtBashOutput
+			// 
+			this->lblAtBashOutput->ForeColor = System::Drawing::Color::ForestGreen;
+			this->lblAtBashOutput->Location = System::Drawing::Point(34, 137);
+			this->lblAtBashOutput->Name = L"lblAtBashOutput";
+			this->lblAtBashOutput->Size = System::Drawing::Size(545, 137);
+			this->lblAtBashOutput->TabIndex = 5;
+			this->lblAtBashOutput->Text = L"label1";
+			// 
+			// lblAtBashText
+			// 
+			this->lblAtBashText->AutoSize = true;
+			this->lblAtBashText->Location = System::Drawing::Point(30, 40);
+			this->lblAtBashText->Name = L"lblAtBashText";
+			this->lblAtBashText->Size = System::Drawing::Size(50, 22);
+			this->lblAtBashText->TabIndex = 2;
+			this->lblAtBashText->Text = L"Text";
+			// 
+			// txtAtBashText
+			// 
+			this->txtAtBashText->Location = System::Drawing::Point(147, 40);
+			this->txtAtBashText->Multiline = true;
+			this->txtAtBashText->Name = L"txtAtBashText";
+			this->txtAtBashText->Size = System::Drawing::Size(432, 77);
+			this->txtAtBashText->TabIndex = 0;
+			// 
+			// tabVigenere
+			// 
+			this->tabVigenere->Controls->Add(this->txtVigenereKey);
+			this->tabVigenere->Controls->Add(this->btnVigenereCopy);
+			this->tabVigenere->Controls->Add(this->btnVigenereDecrypt);
+			this->tabVigenere->Controls->Add(this->btnVigenereEncrypt);
+			this->tabVigenere->Controls->Add(this->lblVigenereOutput);
+			this->tabVigenere->Controls->Add(this->lblVigenereKey);
+			this->tabVigenere->Controls->Add(this->lblVigenereText);
+			this->tabVigenere->Controls->Add(this->txtVigenereText);
+			this->tabVigenere->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabVigenere->Location = System::Drawing::Point(230, 11);
+			this->tabVigenere->Name = L"tabVigenere";
+			this->tabVigenere->Size = System::Drawing::Size(613, 361);
+			this->tabVigenere->TabIndex = 9;
+			this->tabVigenere->TabStop = false;
+			this->tabVigenere->Text = L"Vigenère Cipher";
+			// 
+			// txtVigenereKey
+			// 
+			this->txtVigenereKey->Location = System::Drawing::Point(147, 135);
+			this->txtVigenereKey->Name = L"txtVigenereKey";
+			this->txtVigenereKey->Size = System::Drawing::Size(150, 29);
+			this->txtVigenereKey->TabIndex = 9;
+			// 
+			// btnVigenereCopy
+			// 
+			this->btnVigenereCopy->Location = System::Drawing::Point(478, 291);
+			this->btnVigenereCopy->Name = L"btnVigenereCopy";
+			this->btnVigenereCopy->Size = System::Drawing::Size(100, 43);
+			this->btnVigenereCopy->TabIndex = 8;
+			this->btnVigenereCopy->Text = L"Copy";
+			this->btnVigenereCopy->UseVisualStyleBackColor = true;
+			this->btnVigenereCopy->Click += gcnew System::EventHandler(this, &DashBoard::btnVigenereCopy_Click);
+			// 
+			// btnVigenereDecrypt
+			// 
+			this->btnVigenereDecrypt->AutoSize = true;
+			this->btnVigenereDecrypt->Location = System::Drawing::Point(166, 291);
+			this->btnVigenereDecrypt->Name = L"btnVigenereDecrypt";
+			this->btnVigenereDecrypt->Size = System::Drawing::Size(115, 43);
+			this->btnVigenereDecrypt->TabIndex = 7;
+			this->btnVigenereDecrypt->Text = L"Decrypt";
+			this->btnVigenereDecrypt->UseVisualStyleBackColor = true;
+			this->btnVigenereDecrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnVigenereDecrypt_Click);
+			// 
+			// btnVigenereEncrypt
+			// 
+			this->btnVigenereEncrypt->AutoSize = true;
+			this->btnVigenereEncrypt->Location = System::Drawing::Point(33, 291);
+			this->btnVigenereEncrypt->Name = L"btnVigenereEncrypt";
+			this->btnVigenereEncrypt->Size = System::Drawing::Size(107, 43);
+			this->btnVigenereEncrypt->TabIndex = 6;
+			this->btnVigenereEncrypt->Text = L"Encrypt";
+			this->btnVigenereEncrypt->UseVisualStyleBackColor = true;
+			this->btnVigenereEncrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnVigenereEncrypt_Click);
+			// 
+			// lblVigenereOutput
+			// 
+			this->lblVigenereOutput->ForeColor = System::Drawing::Color::ForestGreen;
+			this->lblVigenereOutput->Location = System::Drawing::Point(34, 179);
+			this->lblVigenereOutput->Name = L"lblVigenereOutput";
+			this->lblVigenereOutput->Size = System::Drawing::Size(545, 95);
+			this->lblVigenereOutput->TabIndex = 5;
+			this->lblVigenereOutput->Text = L"label1";
+			// 
+			// lblVigenereKey
+			// 
+			this->lblVigenereKey->AutoSize = true;
+			this->lblVigenereKey->Location = System::Drawing::Point(30, 135);
+			this->lblVigenereKey->Name = L"lblVigenereKey";
+			this->lblVigenereKey->Size = System::Drawing::Size(45, 22);
+			this->lblVigenereKey->TabIndex = 3;
+			this->lblVigenereKey->Text = L"Key";
+			// 
+			// lblVigenereText
+			// 
+			this->lblVigenereText->AutoSize = true;
+			this->lblVigenereText->Location = System::Drawing::Point(30, 40);
+			this->lblVigenereText->Name = L"lblVigenereText";
+			this->lblVigenereText->Size = System::Drawing::Size(50, 22);
+			this->lblVigenereText->TabIndex = 2;
+			this->lblVigenereText->Text = L"Text";
+			// 
+			// txtVigenereText
+			// 
+			this->txtVigenereText->Location = System::Drawing::Point(147, 40);
+			this->txtVigenereText->Multiline = true;
+			this->txtVigenereText->Name = L"txtVigenereText";
+			this->txtVigenereText->Size = System::Drawing::Size(432, 77);
+			this->txtVigenereText->TabIndex = 0;
+			// 
+			// tabSubstitution
+			// 
+			this->tabSubstitution->Controls->Add(this->txtSubstitutionKey);
+			this->tabSubstitution->Controls->Add(this->btnSubstitutionCopy);
+			this->tabSubstitution->Controls->Add(this->btnSubstitutionDecrypt);
+			this->tabSubstitution->Controls->Add(this->btnSubstitutionEncrypt);
+			this->tabSubstitution->Controls->Add(this->lblSubstitutionOutput);
+			this->tabSubstitution->Controls->Add(this->lblSubstitutionKey);
+			this->tabSubstitution->Controls->Add(this->lblSubstitutionText);
+			this->tabSubstitution->Controls->Add(this->txtSubstitutionText);
+			this->tabSubstitution->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabSubstitution->Location = System::Drawing::Point(230, 12);
+			this->tabSubstitution->Name = L"tabSubstitution";
+			this->tabSubstitution->Size = System::Drawing::Size(613, 361);
+			this->tabSubstitution->TabIndex = 9;
+			this->tabSubstitution->TabStop = false;
+			this->tabSubstitution->Text = L"Substitution Cipher";
+			// 
+			// txtSubstitutionKey
+			// 
+			this->txtSubstitutionKey->Location = System::Drawing::Point(147, 136);
+			this->txtSubstitutionKey->Name = L"txtSubstitutionKey";
+			this->txtSubstitutionKey->Size = System::Drawing::Size(150, 29);
+			this->txtSubstitutionKey->TabIndex = 9;
+			// 
+			// btnSubstitutionCopy
+			// 
+			this->btnSubstitutionCopy->Location = System::Drawing::Point(478, 291);
+			this->btnSubstitutionCopy->Name = L"btnSubstitutionCopy";
+			this->btnSubstitutionCopy->Size = System::Drawing::Size(100, 43);
+			this->btnSubstitutionCopy->TabIndex = 8;
+			this->btnSubstitutionCopy->Text = L"Copy";
+			this->btnSubstitutionCopy->UseVisualStyleBackColor = true;
+			this->btnSubstitutionCopy->Click += gcnew System::EventHandler(this, &DashBoard::btnSubstitutionCopy_Click);
+			// 
+			// btnSubstitutionDecrypt
+			// 
+			this->btnSubstitutionDecrypt->AutoSize = true;
+			this->btnSubstitutionDecrypt->Location = System::Drawing::Point(166, 291);
+			this->btnSubstitutionDecrypt->Name = L"btnSubstitutionDecrypt";
+			this->btnSubstitutionDecrypt->Size = System::Drawing::Size(115, 43);
+			this->btnSubstitutionDecrypt->TabIndex = 7;
+			this->btnSubstitutionDecrypt->Text = L"Decrypt";
+			this->btnSubstitutionDecrypt->UseVisualStyleBackColor = true;
+			this->btnSubstitutionDecrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnSubstitutionDecrypt_Click);
+			// 
+			// btnSubstitutionEncrypt
+			// 
+			this->btnSubstitutionEncrypt->AutoSize = true;
+			this->btnSubstitutionEncrypt->Location = System::Drawing::Point(33, 291);
+			this->btnSubstitutionEncrypt->Name = L"btnSubstitutionEncrypt";
+			this->btnSubstitutionEncrypt->Size = System::Drawing::Size(107, 43);
+			this->btnSubstitutionEncrypt->TabIndex = 6;
+			this->btnSubstitutionEncrypt->Text = L"Encrypt";
+			this->btnSubstitutionEncrypt->UseVisualStyleBackColor = true;
+			this->btnSubstitutionEncrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnSubstitutionEncrypt_Click);
+			// 
+			// lblSubstitutionOutput
+			// 
+			this->lblSubstitutionOutput->ForeColor = System::Drawing::Color::ForestGreen;
+			this->lblSubstitutionOutput->Location = System::Drawing::Point(34, 179);
+			this->lblSubstitutionOutput->Name = L"lblSubstitutionOutput";
+			this->lblSubstitutionOutput->Size = System::Drawing::Size(545, 95);
+			this->lblSubstitutionOutput->TabIndex = 5;
+			this->lblSubstitutionOutput->Text = L"label1";
+			// 
+			// lblSubstitutionKey
+			// 
+			this->lblSubstitutionKey->AutoSize = true;
+			this->lblSubstitutionKey->Location = System::Drawing::Point(30, 135);
+			this->lblSubstitutionKey->Name = L"lblSubstitutionKey";
+			this->lblSubstitutionKey->Size = System::Drawing::Size(45, 22);
+			this->lblSubstitutionKey->TabIndex = 3;
+			this->lblSubstitutionKey->Text = L"Key";
+			// 
+			// lblSubstitutionText
+			// 
+			this->lblSubstitutionText->AutoSize = true;
+			this->lblSubstitutionText->Location = System::Drawing::Point(30, 40);
+			this->lblSubstitutionText->Name = L"lblSubstitutionText";
+			this->lblSubstitutionText->Size = System::Drawing::Size(50, 22);
+			this->lblSubstitutionText->TabIndex = 2;
+			this->lblSubstitutionText->Text = L"Text";
+			// 
+			// txtSubstitutionText
+			// 
+			this->txtSubstitutionText->Location = System::Drawing::Point(147, 40);
+			this->txtSubstitutionText->Multiline = true;
+			this->txtSubstitutionText->Name = L"txtSubstitutionText";
+			this->txtSubstitutionText->Size = System::Drawing::Size(432, 77);
+			this->txtSubstitutionText->TabIndex = 0;
+			// 
+			// tabColumnarTransposition
+			// 
+			this->tabColumnarTransposition->Controls->Add(this->txtColumnarTranspositionKey);
+			this->tabColumnarTransposition->Controls->Add(this->btnColumnarTranspositionCopy);
+			this->tabColumnarTransposition->Controls->Add(this->btnColumnarTranspositionDecrypt);
+			this->tabColumnarTransposition->Controls->Add(this->btnColumnarTranspositionEncrypt);
+			this->tabColumnarTransposition->Controls->Add(this->lblColumnarTranspositionOutput);
+			this->tabColumnarTransposition->Controls->Add(this->lblColumnarTranspositionKey);
+			this->tabColumnarTransposition->Controls->Add(this->lblColumnarTranspositionText);
+			this->tabColumnarTransposition->Controls->Add(this->txtColumnarTranspositionText);
+			this->tabColumnarTransposition->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabColumnarTransposition->Location = System::Drawing::Point(228, 11);
+			this->tabColumnarTransposition->Name = L"tabColumnarTransposition";
+			this->tabColumnarTransposition->Size = System::Drawing::Size(613, 361);
+			this->tabColumnarTransposition->TabIndex = 9;
+			this->tabColumnarTransposition->TabStop = false;
+			this->tabColumnarTransposition->Text = L"Columnar Transposition  Cipher";
+			// 
+			// txtColumnarTranspositionKey
+			// 
+			this->txtColumnarTranspositionKey->Location = System::Drawing::Point(149, 137);
+			this->txtColumnarTranspositionKey->Name = L"txtColumnarTranspositionKey";
+			this->txtColumnarTranspositionKey->Size = System::Drawing::Size(205, 29);
+			this->txtColumnarTranspositionKey->TabIndex = 9;
+			// 
+			// btnColumnarTranspositionCopy
+			// 
+			this->btnColumnarTranspositionCopy->Location = System::Drawing::Point(478, 291);
+			this->btnColumnarTranspositionCopy->Name = L"btnColumnarTranspositionCopy";
+			this->btnColumnarTranspositionCopy->Size = System::Drawing::Size(100, 43);
+			this->btnColumnarTranspositionCopy->TabIndex = 8;
+			this->btnColumnarTranspositionCopy->Text = L"Copy";
+			this->btnColumnarTranspositionCopy->UseVisualStyleBackColor = true;
+			this->btnColumnarTranspositionCopy->Click += gcnew System::EventHandler(this, &DashBoard::btnColumnarTranspositionCopy_Click);
+			// 
+			// btnColumnarTranspositionDecrypt
+			// 
+			this->btnColumnarTranspositionDecrypt->AutoSize = true;
+			this->btnColumnarTranspositionDecrypt->Location = System::Drawing::Point(166, 291);
+			this->btnColumnarTranspositionDecrypt->Name = L"btnColumnarTranspositionDecrypt";
+			this->btnColumnarTranspositionDecrypt->Size = System::Drawing::Size(115, 43);
+			this->btnColumnarTranspositionDecrypt->TabIndex = 7;
+			this->btnColumnarTranspositionDecrypt->Text = L"Decrypt";
+			this->btnColumnarTranspositionDecrypt->UseVisualStyleBackColor = true;
+			this->btnColumnarTranspositionDecrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnColumnarTranspositionDecrypt_Click);
+			// 
+			// btnColumnarTranspositionEncrypt
+			// 
+			this->btnColumnarTranspositionEncrypt->AutoSize = true;
+			this->btnColumnarTranspositionEncrypt->Location = System::Drawing::Point(33, 291);
+			this->btnColumnarTranspositionEncrypt->Name = L"btnColumnarTranspositionEncrypt";
+			this->btnColumnarTranspositionEncrypt->Size = System::Drawing::Size(107, 43);
+			this->btnColumnarTranspositionEncrypt->TabIndex = 6;
+			this->btnColumnarTranspositionEncrypt->Text = L"Encrypt";
+			this->btnColumnarTranspositionEncrypt->UseVisualStyleBackColor = true;
+			this->btnColumnarTranspositionEncrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnColumnarTranspositionEncrypt_Click);
+			// 
+			// lblColumnarTranspositionOutput
+			// 
+			this->lblColumnarTranspositionOutput->ForeColor = System::Drawing::Color::ForestGreen;
+			this->lblColumnarTranspositionOutput->Location = System::Drawing::Point(34, 179);
+			this->lblColumnarTranspositionOutput->Name = L"lblColumnarTranspositionOutput";
+			this->lblColumnarTranspositionOutput->Size = System::Drawing::Size(545, 95);
+			this->lblColumnarTranspositionOutput->TabIndex = 5;
+			this->lblColumnarTranspositionOutput->Text = L"label1";
+			// 
+			// lblColumnarTranspositionKey
+			// 
+			this->lblColumnarTranspositionKey->AutoSize = true;
+			this->lblColumnarTranspositionKey->Location = System::Drawing::Point(30, 135);
+			this->lblColumnarTranspositionKey->Name = L"lblColumnarTranspositionKey";
+			this->lblColumnarTranspositionKey->Size = System::Drawing::Size(45, 22);
+			this->lblColumnarTranspositionKey->TabIndex = 3;
+			this->lblColumnarTranspositionKey->Text = L"Key";
+			// 
+			// lblColumnarTranspositionText
+			// 
+			this->lblColumnarTranspositionText->AutoSize = true;
+			this->lblColumnarTranspositionText->Location = System::Drawing::Point(30, 40);
+			this->lblColumnarTranspositionText->Name = L"lblColumnarTranspositionText";
+			this->lblColumnarTranspositionText->Size = System::Drawing::Size(50, 22);
+			this->lblColumnarTranspositionText->TabIndex = 2;
+			this->lblColumnarTranspositionText->Text = L"Text";
+			// 
+			// txtColumnarTranspositionText
+			// 
+			this->txtColumnarTranspositionText->Location = System::Drawing::Point(147, 40);
+			this->txtColumnarTranspositionText->Multiline = true;
+			this->txtColumnarTranspositionText->Name = L"txtColumnarTranspositionText";
+			this->txtColumnarTranspositionText->Size = System::Drawing::Size(432, 77);
+			this->txtColumnarTranspositionText->TabIndex = 0;
+			// 
+			// tabSimpleXOR
+			// 
+			this->tabSimpleXOR->Controls->Add(this->txtSimpleXORKey);
+			this->tabSimpleXOR->Controls->Add(this->btnSimpleXORCopy);
+			this->tabSimpleXOR->Controls->Add(this->btnSimpleXORDecrypt);
+			this->tabSimpleXOR->Controls->Add(this->btnSimpleXOREncrypt);
+			this->tabSimpleXOR->Controls->Add(this->lblSimpleXOROutput);
+			this->tabSimpleXOR->Controls->Add(this->lblSimpleXORKey);
+			this->tabSimpleXOR->Controls->Add(this->lblSimpleXORText);
+			this->tabSimpleXOR->Controls->Add(this->txtSimpleXORText);
+			this->tabSimpleXOR->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabSimpleXOR->Location = System::Drawing::Point(228, 11);
+			this->tabSimpleXOR->Name = L"tabSimpleXOR";
+			this->tabSimpleXOR->Size = System::Drawing::Size(613, 361);
+			this->tabSimpleXOR->TabIndex = 9;
+			this->tabSimpleXOR->TabStop = false;
+			this->tabSimpleXOR->Text = L"Simple XOR Cipher ";
+			// 
+			// btnSimpleXORCopy
+			// 
+			this->btnSimpleXORCopy->Location = System::Drawing::Point(478, 291);
+			this->btnSimpleXORCopy->Name = L"btnSimpleXORCopy";
+			this->btnSimpleXORCopy->Size = System::Drawing::Size(100, 43);
+			this->btnSimpleXORCopy->TabIndex = 8;
+			this->btnSimpleXORCopy->Text = L"Copy";
+			this->btnSimpleXORCopy->UseVisualStyleBackColor = true;
+			this->btnSimpleXORCopy->Click += gcnew System::EventHandler(this, &DashBoard::btnSimpleXORCopy_Click);
+			// 
+			// btnSimpleXORDecrypt
+			// 
+			this->btnSimpleXORDecrypt->AutoSize = true;
+			this->btnSimpleXORDecrypt->Location = System::Drawing::Point(166, 291);
+			this->btnSimpleXORDecrypt->Name = L"btnSimpleXORDecrypt";
+			this->btnSimpleXORDecrypt->Size = System::Drawing::Size(115, 43);
+			this->btnSimpleXORDecrypt->TabIndex = 7;
+			this->btnSimpleXORDecrypt->Text = L"Decrypt";
+			this->btnSimpleXORDecrypt->UseVisualStyleBackColor = true;
+			this->btnSimpleXORDecrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnSimpleXORDecrypt_Click);
+			// 
+			// btnSimpleXOREncrypt
+			// 
+			this->btnSimpleXOREncrypt->AutoSize = true;
+			this->btnSimpleXOREncrypt->Location = System::Drawing::Point(33, 291);
+			this->btnSimpleXOREncrypt->Name = L"btnSimpleXOREncrypt";
+			this->btnSimpleXOREncrypt->Size = System::Drawing::Size(107, 43);
+			this->btnSimpleXOREncrypt->TabIndex = 6;
+			this->btnSimpleXOREncrypt->Text = L"Encrypt";
+			this->btnSimpleXOREncrypt->UseVisualStyleBackColor = true;
+			this->btnSimpleXOREncrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnSimpleXOREncrypt_Click);
+			// 
+			// lblSimpleXOROutput
+			// 
+			this->lblSimpleXOROutput->ForeColor = System::Drawing::Color::ForestGreen;
+			this->lblSimpleXOROutput->Location = System::Drawing::Point(34, 179);
+			this->lblSimpleXOROutput->Name = L"lblSimpleXOROutput";
+			this->lblSimpleXOROutput->Size = System::Drawing::Size(545, 95);
+			this->lblSimpleXOROutput->TabIndex = 5;
+			this->lblSimpleXOROutput->Text = L"label1";
+			// 
+			// lblSimpleXORKey
+			// 
+			this->lblSimpleXORKey->AutoSize = true;
+			this->lblSimpleXORKey->Location = System::Drawing::Point(30, 135);
+			this->lblSimpleXORKey->Name = L"lblSimpleXORKey";
+			this->lblSimpleXORKey->Size = System::Drawing::Size(45, 22);
+			this->lblSimpleXORKey->TabIndex = 3;
+			this->lblSimpleXORKey->Text = L"Key";
+			// 
+			// lblSimpleXORText
+			// 
+			this->lblSimpleXORText->AutoSize = true;
+			this->lblSimpleXORText->Location = System::Drawing::Point(30, 40);
+			this->lblSimpleXORText->Name = L"lblSimpleXORText";
+			this->lblSimpleXORText->Size = System::Drawing::Size(50, 22);
+			this->lblSimpleXORText->TabIndex = 2;
+			this->lblSimpleXORText->Text = L"Text";
+			// 
+			// txtSimpleXORText
+			// 
+			this->txtSimpleXORText->Location = System::Drawing::Point(147, 40);
+			this->txtSimpleXORText->Multiline = true;
+			this->txtSimpleXORText->Name = L"txtSimpleXORText";
+			this->txtSimpleXORText->Size = System::Drawing::Size(432, 77);
+			this->txtSimpleXORText->TabIndex = 0;
+			// 
+			// txtSimpleXORKey
+			// 
+			this->txtSimpleXORKey->Location = System::Drawing::Point(149, 137);
+			this->txtSimpleXORKey->Name = L"txtSimpleXORKey";
+			this->txtSimpleXORKey->Size = System::Drawing::Size(184, 29);
+			this->txtSimpleXORKey->TabIndex = 9;
+			// 
 			// DashBoard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
-			this->ClientSize = System::Drawing::Size(1364, 588);
+			this->ClientSize = System::Drawing::Size(864, 395);
+			this->Controls->Add(this->tabSimpleXOR);
+			this->Controls->Add(this->tabColumnarTransposition);
+			this->Controls->Add(this->tabSubstitution);
+			this->Controls->Add(this->tabVigenere);
+			this->Controls->Add(this->tabAtBash);
 			this->Controls->Add(this->tabCaesar);
-			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->tabWelcome);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
@@ -483,12 +967,19 @@ namespace TextSafer {
 			this->Name = L"DashBoard";
 			this->Text = L"DashBoard";
 			this->tableLayoutPanel1->ResumeLayout(false);
-			this->groupBox1->ResumeLayout(false);
-			this->groupBox1->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->EndInit();
 			this->tabCaesar->ResumeLayout(false);
 			this->tabCaesar->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txtCaesarShiftKey))->EndInit();
+			this->tabAtBash->ResumeLayout(false);
+			this->tabAtBash->PerformLayout();
+			this->tabVigenere->ResumeLayout(false);
+			this->tabVigenere->PerformLayout();
+			this->tabSubstitution->ResumeLayout(false);
+			this->tabSubstitution->PerformLayout();
+			this->tabColumnarTransposition->ResumeLayout(false);
+			this->tabColumnarTransposition->PerformLayout();
+			this->tabSimpleXOR->ResumeLayout(false);
+			this->tabSimpleXOR->PerformLayout();
 			this->ResumeLayout(false);
 
 		}
@@ -504,5 +995,20 @@ namespace TextSafer {
 	private: System::Void btnCaesarEncrypt_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void btnCaesarDecrypt_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void btnCaesarCopy_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnAtBashEncrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnAtBashDecrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnAtBashCopy_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnVigenereEncrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnVigenereDecrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnVigenereCopy_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnSubstitutionEncrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnSubstitutionDecrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnSubstitutionCopy_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnColumnarTranspositionEncrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnColumnarTranspositionDecrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnColumnarTranspositionCopy_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnSimpleXOREncrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnSimpleXORDecrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnSimpleXORCopy_Click(System::Object^ sender, System::EventArgs^ e);
 	};
 }
