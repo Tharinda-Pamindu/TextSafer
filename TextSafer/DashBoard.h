@@ -44,28 +44,68 @@ namespace TextSafer {
 	private: System::Windows::Forms::Button^ btnSubstitution;
 
 	private: System::Windows::Forms::Button^ btnVigenere;
-
 	private: System::Windows::Forms::Button^ btnAtbash;
 
+
+
+
 	private: System::Windows::Forms::Button^ btnCaesar;
-	private: System::Windows::Forms::GroupBox^ tabCaesar;
+
 	private: System::Windows::Forms::GroupBox^ tabWelcome;
-	private: System::Windows::Forms::Label^ lblText;
 
 
 
-	private: System::Windows::Forms::TextBox^ txtContent;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	private: System::Windows::Forms::GroupBox^ groupBox1;
-	private: System::Windows::Forms::Label^ lblShiftKey;
-	private: System::Windows::Forms::Label^ lblOutputCaesar;
+	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::NumericUpDown^ numericUpDown2;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::GroupBox^ tabCaesar;
+	private: System::Windows::Forms::Button^ btnCaesarCopy;
 
-
-	private: System::Windows::Forms::NumericUpDown^ txtShiftKey;
 	private: System::Windows::Forms::Button^ btnCaesarDecrypt;
 
 	private: System::Windows::Forms::Button^ btnCaesarEncrypt;
-	private: System::Windows::Forms::Button^ btnCopyCaeser;
+
+	private: System::Windows::Forms::Label^ lblCaesarOutput;
+
+	private: System::Windows::Forms::NumericUpDown^ txtCaesarShiftKey;
+
+	private: System::Windows::Forms::Label^ lblCaesarShiftKey;
+
+	private: System::Windows::Forms::Label^ lblCaesarText;
+	private: System::Windows::Forms::TextBox^ txtCaesarText;
+
+
+
+
 
 
 
@@ -93,20 +133,30 @@ namespace TextSafer {
 			this->btnVigenere = (gcnew System::Windows::Forms::Button());
 			this->btnAtbash = (gcnew System::Windows::Forms::Button());
 			this->btnCaesar = (gcnew System::Windows::Forms::Button());
-			this->tabCaesar = (gcnew System::Windows::Forms::GroupBox());
-			this->btnCopyCaeser = (gcnew System::Windows::Forms::Button());
-			this->btnCaesarDecrypt = (gcnew System::Windows::Forms::Button());
-			this->btnCaesarEncrypt = (gcnew System::Windows::Forms::Button());
-			this->lblOutputCaesar = (gcnew System::Windows::Forms::Label());
-			this->txtShiftKey = (gcnew System::Windows::Forms::NumericUpDown());
-			this->lblShiftKey = (gcnew System::Windows::Forms::Label());
-			this->lblText = (gcnew System::Windows::Forms::Label());
-			this->txtContent = (gcnew System::Windows::Forms::TextBox());
 			this->tabWelcome = (gcnew System::Windows::Forms::GroupBox());
 			this->groupBox1 = (gcnew System::Windows::Forms::GroupBox());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->numericUpDown2 = (gcnew System::Windows::Forms::NumericUpDown());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->tabCaesar = (gcnew System::Windows::Forms::GroupBox());
+			this->btnCaesarCopy = (gcnew System::Windows::Forms::Button());
+			this->btnCaesarDecrypt = (gcnew System::Windows::Forms::Button());
+			this->btnCaesarEncrypt = (gcnew System::Windows::Forms::Button());
+			this->lblCaesarOutput = (gcnew System::Windows::Forms::Label());
+			this->txtCaesarShiftKey = (gcnew System::Windows::Forms::NumericUpDown());
+			this->lblCaesarShiftKey = (gcnew System::Windows::Forms::Label());
+			this->lblCaesarText = (gcnew System::Windows::Forms::Label());
+			this->txtCaesarText = (gcnew System::Windows::Forms::TextBox());
 			this->tableLayoutPanel1->SuspendLayout();
+			this->groupBox1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->BeginInit();
 			this->tabCaesar->SuspendLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txtShiftKey))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txtCaesarShiftKey))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tableLayoutPanel1
@@ -154,6 +204,7 @@ namespace TextSafer {
 			this->btnSimpleXOR->TabIndex = 6;
 			this->btnSimpleXOR->Text = L"Simple XOR Cipher ";
 			this->btnSimpleXOR->UseVisualStyleBackColor = true;
+			this->btnSimpleXOR->Click += gcnew System::EventHandler(this, &DashBoard::btnSimpleXOR_Click);
 			// 
 			// btnColumnarTransposition
 			// 
@@ -165,6 +216,7 @@ namespace TextSafer {
 			this->btnColumnarTransposition->TabIndex = 5;
 			this->btnColumnarTransposition->Text = L"Columnar Transposition Cipher ";
 			this->btnColumnarTransposition->UseVisualStyleBackColor = true;
+			this->btnColumnarTransposition->Click += gcnew System::EventHandler(this, &DashBoard::btnColumnarTransposition_Click);
 			// 
 			// btnSubstitution
 			// 
@@ -176,6 +228,7 @@ namespace TextSafer {
 			this->btnSubstitution->TabIndex = 4;
 			this->btnSubstitution->Text = L"Substitution Cipher";
 			this->btnSubstitution->UseVisualStyleBackColor = true;
+			this->btnSubstitution->Click += gcnew System::EventHandler(this, &DashBoard::btnSubstitution_Click);
 			// 
 			// btnVigenere
 			// 
@@ -187,6 +240,7 @@ namespace TextSafer {
 			this->btnVigenere->TabIndex = 3;
 			this->btnVigenere->Text = L"Vigenère Cipher ";
 			this->btnVigenere->UseVisualStyleBackColor = true;
+			this->btnVigenere->Click += gcnew System::EventHandler(this, &DashBoard::btnVigenere_Click);
 			// 
 			// btnAtbash
 			// 
@@ -198,6 +252,7 @@ namespace TextSafer {
 			this->btnAtbash->TabIndex = 2;
 			this->btnAtbash->Text = L"Atbash Cipher ";
 			this->btnAtbash->UseVisualStyleBackColor = true;
+			this->btnAtbash->Click += gcnew System::EventHandler(this, &DashBoard::btnAtbash_Click);
 			// 
 			// btnCaesar
 			// 
@@ -211,16 +266,121 @@ namespace TextSafer {
 			this->btnCaesar->UseVisualStyleBackColor = true;
 			this->btnCaesar->Click += gcnew System::EventHandler(this, &DashBoard::btnCaesar_Click);
 			// 
+			// tabWelcome
+			// 
+			this->tabWelcome->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"tabWelcome.BackgroundImage")));
+			this->tabWelcome->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
+			this->tabWelcome->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->tabWelcome->Location = System::Drawing::Point(226, 13);
+			this->tabWelcome->Name = L"tabWelcome";
+			this->tabWelcome->Size = System::Drawing::Size(613, 361);
+			this->tabWelcome->TabIndex = 1;
+			this->tabWelcome->TabStop = false;
+			// 
+			// groupBox1
+			// 
+			this->groupBox1->Controls->Add(this->button4);
+			this->groupBox1->Controls->Add(this->button5);
+			this->groupBox1->Controls->Add(this->button6);
+			this->groupBox1->Controls->Add(this->label4);
+			this->groupBox1->Controls->Add(this->numericUpDown2);
+			this->groupBox1->Controls->Add(this->label5);
+			this->groupBox1->Controls->Add(this->label6);
+			this->groupBox1->Controls->Add(this->textBox2);
+			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->groupBox1->Location = System::Drawing::Point(15, 449);
+			this->groupBox1->Name = L"groupBox1";
+			this->groupBox1->Size = System::Drawing::Size(613, 361);
+			this->groupBox1->TabIndex = 1;
+			this->groupBox1->TabStop = false;
+			this->groupBox1->Text = L"At Bash Cipher";
+			// 
+			// button4
+			// 
+			this->button4->Location = System::Drawing::Point(478, 291);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(100, 43);
+			this->button4->TabIndex = 8;
+			this->button4->Text = L"Copy";
+			this->button4->UseVisualStyleBackColor = true;
+			// 
+			// button5
+			// 
+			this->button5->AutoSize = true;
+			this->button5->Location = System::Drawing::Point(166, 291);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(115, 43);
+			this->button5->TabIndex = 7;
+			this->button5->Text = L"Decrypt";
+			this->button5->UseVisualStyleBackColor = true;
+			// 
+			// button6
+			// 
+			this->button6->AutoSize = true;
+			this->button6->Location = System::Drawing::Point(33, 291);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(107, 43);
+			this->button6->TabIndex = 6;
+			this->button6->Text = L"Encrypt";
+			this->button6->UseVisualStyleBackColor = true;
+			// 
+			// label4
+			// 
+			this->label4->ForeColor = System::Drawing::Color::ForestGreen;
+			this->label4->Location = System::Drawing::Point(34, 179);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(545, 95);
+			this->label4->TabIndex = 5;
+			this->label4->Text = L"label4";
+			// 
+			// numericUpDown2
+			// 
+			this->numericUpDown2->Location = System::Drawing::Point(147, 133);
+			this->numericUpDown2->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 26, 0, 0, 0 });
+			this->numericUpDown2->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->numericUpDown2->Name = L"numericUpDown2";
+			this->numericUpDown2->Size = System::Drawing::Size(56, 29);
+			this->numericUpDown2->TabIndex = 4;
+			this->numericUpDown2->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Location = System::Drawing::Point(30, 135);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(97, 22);
+			this->label5->TabIndex = 3;
+			this->label5->Text = L"Shift Key";
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Location = System::Drawing::Point(30, 40);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(50, 22);
+			this->label6->TabIndex = 2;
+			this->label6->Text = L"Text";
+			// 
+			// textBox2
+			// 
+			this->textBox2->Location = System::Drawing::Point(147, 40);
+			this->textBox2->Multiline = true;
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(432, 77);
+			this->textBox2->TabIndex = 0;
+			// 
 			// tabCaesar
 			// 
-			this->tabCaesar->Controls->Add(this->btnCopyCaeser);
+			this->tabCaesar->Controls->Add(this->btnCaesarCopy);
 			this->tabCaesar->Controls->Add(this->btnCaesarDecrypt);
 			this->tabCaesar->Controls->Add(this->btnCaesarEncrypt);
-			this->tabCaesar->Controls->Add(this->lblOutputCaesar);
-			this->tabCaesar->Controls->Add(this->txtShiftKey);
-			this->tabCaesar->Controls->Add(this->lblShiftKey);
-			this->tabCaesar->Controls->Add(this->lblText);
-			this->tabCaesar->Controls->Add(this->txtContent);
+			this->tabCaesar->Controls->Add(this->lblCaesarOutput);
+			this->tabCaesar->Controls->Add(this->txtCaesarShiftKey);
+			this->tabCaesar->Controls->Add(this->lblCaesarShiftKey);
+			this->tabCaesar->Controls->Add(this->lblCaesarText);
+			this->tabCaesar->Controls->Add(this->txtCaesarText);
 			this->tabCaesar->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->tabCaesar->Location = System::Drawing::Point(226, 13);
@@ -228,17 +388,17 @@ namespace TextSafer {
 			this->tabCaesar->Size = System::Drawing::Size(613, 361);
 			this->tabCaesar->TabIndex = 2;
 			this->tabCaesar->TabStop = false;
-			this->tabCaesar->Text = L"Caesar Cipher";
+			this->tabCaesar->Text = L"At Bash Cipher";
 			// 
-			// btnCopyCaeser
+			// btnCaesarCopy
 			// 
-			this->btnCopyCaeser->Location = System::Drawing::Point(478, 291);
-			this->btnCopyCaeser->Name = L"btnCopyCaeser";
-			this->btnCopyCaeser->Size = System::Drawing::Size(100, 43);
-			this->btnCopyCaeser->TabIndex = 8;
-			this->btnCopyCaeser->Text = L"Copy";
-			this->btnCopyCaeser->UseVisualStyleBackColor = true;
-			this->btnCopyCaeser->Click += gcnew System::EventHandler(this, &DashBoard::btnCopyCaeser_Click);
+			this->btnCaesarCopy->Location = System::Drawing::Point(478, 291);
+			this->btnCaesarCopy->Name = L"btnCaesarCopy";
+			this->btnCaesarCopy->Size = System::Drawing::Size(100, 43);
+			this->btnCaesarCopy->TabIndex = 8;
+			this->btnCaesarCopy->Text = L"Copy";
+			this->btnCaesarCopy->UseVisualStyleBackColor = true;
+			this->btnCaesarCopy->Click += gcnew System::EventHandler(this, &DashBoard::btnCaesarCopy_Click);
 			// 
 			// btnCaesarDecrypt
 			// 
@@ -262,82 +422,59 @@ namespace TextSafer {
 			this->btnCaesarEncrypt->UseVisualStyleBackColor = true;
 			this->btnCaesarEncrypt->Click += gcnew System::EventHandler(this, &DashBoard::btnCaesarEncrypt_Click);
 			// 
-			// lblOutputCaesar
+			// lblCaesarOutput
 			// 
-			this->lblOutputCaesar->ForeColor = System::Drawing::Color::ForestGreen;
-			this->lblOutputCaesar->Location = System::Drawing::Point(34, 179);
-			this->lblOutputCaesar->Name = L"lblOutputCaesar";
-			this->lblOutputCaesar->Size = System::Drawing::Size(545, 95);
-			this->lblOutputCaesar->TabIndex = 5;
-			this->lblOutputCaesar->Text = L"label1";
+			this->lblCaesarOutput->ForeColor = System::Drawing::Color::ForestGreen;
+			this->lblCaesarOutput->Location = System::Drawing::Point(34, 179);
+			this->lblCaesarOutput->Name = L"lblCaesarOutput";
+			this->lblCaesarOutput->Size = System::Drawing::Size(545, 95);
+			this->lblCaesarOutput->TabIndex = 5;
+			this->lblCaesarOutput->Text = L"label1";
 			// 
-			// txtShiftKey
+			// txtCaesarShiftKey
 			// 
-			this->txtShiftKey->Location = System::Drawing::Point(147, 133);
-			this->txtShiftKey->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 26, 0, 0, 0 });
-			this->txtShiftKey->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
-			this->txtShiftKey->Name = L"txtShiftKey";
-			this->txtShiftKey->Size = System::Drawing::Size(56, 29);
-			this->txtShiftKey->TabIndex = 4;
-			this->txtShiftKey->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->txtCaesarShiftKey->Location = System::Drawing::Point(147, 133);
+			this->txtCaesarShiftKey->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 26, 0, 0, 0 });
+			this->txtCaesarShiftKey->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
+			this->txtCaesarShiftKey->Name = L"txtCaesarShiftKey";
+			this->txtCaesarShiftKey->Size = System::Drawing::Size(56, 29);
+			this->txtCaesarShiftKey->TabIndex = 4;
+			this->txtCaesarShiftKey->Value = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
 			// 
-			// lblShiftKey
+			// lblCaesarShiftKey
 			// 
-			this->lblShiftKey->AutoSize = true;
-			this->lblShiftKey->Location = System::Drawing::Point(30, 135);
-			this->lblShiftKey->Name = L"lblShiftKey";
-			this->lblShiftKey->Size = System::Drawing::Size(97, 22);
-			this->lblShiftKey->TabIndex = 3;
-			this->lblShiftKey->Text = L"Shift Key";
+			this->lblCaesarShiftKey->AutoSize = true;
+			this->lblCaesarShiftKey->Location = System::Drawing::Point(30, 135);
+			this->lblCaesarShiftKey->Name = L"lblCaesarShiftKey";
+			this->lblCaesarShiftKey->Size = System::Drawing::Size(97, 22);
+			this->lblCaesarShiftKey->TabIndex = 3;
+			this->lblCaesarShiftKey->Text = L"Shift Key";
 			// 
-			// lblText
+			// lblCaesarText
 			// 
-			this->lblText->AutoSize = true;
-			this->lblText->Location = System::Drawing::Point(30, 40);
-			this->lblText->Name = L"lblText";
-			this->lblText->Size = System::Drawing::Size(50, 22);
-			this->lblText->TabIndex = 2;
-			this->lblText->Text = L"Text";
+			this->lblCaesarText->AutoSize = true;
+			this->lblCaesarText->Location = System::Drawing::Point(30, 40);
+			this->lblCaesarText->Name = L"lblCaesarText";
+			this->lblCaesarText->Size = System::Drawing::Size(50, 22);
+			this->lblCaesarText->TabIndex = 2;
+			this->lblCaesarText->Text = L"Text";
 			// 
-			// txtContent
+			// txtCaesarText
 			// 
-			this->txtContent->Location = System::Drawing::Point(147, 40);
-			this->txtContent->Multiline = true;
-			this->txtContent->Name = L"txtContent";
-			this->txtContent->Size = System::Drawing::Size(432, 77);
-			this->txtContent->TabIndex = 0;
-			// 
-			// tabWelcome
-			// 
-			this->tabWelcome->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"tabWelcome.BackgroundImage")));
-			this->tabWelcome->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->tabWelcome->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->tabWelcome->Location = System::Drawing::Point(226, 13);
-			this->tabWelcome->Name = L"tabWelcome";
-			this->tabWelcome->Size = System::Drawing::Size(613, 361);
-			this->tabWelcome->TabIndex = 1;
-			this->tabWelcome->TabStop = false;
-			// 
-			// groupBox1
-			// 
-			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->groupBox1->Location = System::Drawing::Point(15, 404);
-			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(613, 361);
-			this->groupBox1->TabIndex = 3;
-			this->groupBox1->TabStop = false;
-			this->groupBox1->Text = L"Caesar Cipher";
+			this->txtCaesarText->Location = System::Drawing::Point(147, 40);
+			this->txtCaesarText->Multiline = true;
+			this->txtCaesarText->Name = L"txtCaesarText";
+			this->txtCaesarText->Size = System::Drawing::Size(432, 77);
+			this->txtCaesarText->TabIndex = 0;
 			// 
 			// DashBoard
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->AutoSizeMode = System::Windows::Forms::AutoSizeMode::GrowAndShrink;
-			this->ClientSize = System::Drawing::Size(860, 397);
-			this->Controls->Add(this->groupBox1);
+			this->ClientSize = System::Drawing::Size(1364, 588);
 			this->Controls->Add(this->tabCaesar);
+			this->Controls->Add(this->groupBox1);
 			this->Controls->Add(this->tabWelcome);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
@@ -346,9 +483,12 @@ namespace TextSafer {
 			this->Name = L"DashBoard";
 			this->Text = L"DashBoard";
 			this->tableLayoutPanel1->ResumeLayout(false);
+			this->groupBox1->ResumeLayout(false);
+			this->groupBox1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown2))->EndInit();
 			this->tabCaesar->ResumeLayout(false);
 			this->tabCaesar->PerformLayout();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txtShiftKey))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->txtCaesarShiftKey))->EndInit();
 			this->ResumeLayout(false);
 
 		}
@@ -356,8 +496,13 @@ namespace TextSafer {
 	private: Cipher^ cipher;
 	private: void InitializeSetup();
 	private: System::Void btnCaesar_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnAtbash_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnVigenere_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnSubstitution_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnColumnarTransposition_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnSimpleXOR_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void btnCaesarEncrypt_Click(System::Object^ sender, System::EventArgs^ e);
-	private: System::Void btnCopyCaeser_Click(System::Object^ sender, System::EventArgs^ e);
 	private: System::Void btnCaesarDecrypt_Click(System::Object^ sender, System::EventArgs^ e);
+	private: System::Void btnCaesarCopy_Click(System::Object^ sender, System::EventArgs^ e);
 	};
 }
