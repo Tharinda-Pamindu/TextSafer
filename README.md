@@ -12,7 +12,6 @@ TextSafer is a robust C++ application designed for the DotCPlus workshop series,
 - [Usage](#usage)
 - [Architecture](#architecture)
 - [Contributing](#contributing)
-- [License](#license)
 - [Authors](#authors)
 - [Acknowledgements](#acknowledgements)
 
@@ -89,10 +88,6 @@ We welcome contributions! Please follow these guidelines:
 2. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 3. Push to the branch (`git push origin feature/AmazingFeature`)
 4. Create a Pull Request
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
 
 ## Authors
 
