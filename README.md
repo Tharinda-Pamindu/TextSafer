@@ -90,8 +90,6 @@ We welcome contributions! Please follow these guidelines:
 3. Push to the branch (`git push origin feature/AmazingFeature`)
 4. Create a Pull Request
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
-
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
@@ -100,8 +98,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 - **Tharinda Pamindu**  
   [GitHub](https://github.com/Tharinda-Pamindu)
-
-See [AUTHORS.md](AUTHORS.md) for the full list of contributors.
 
 ## Acknowledgements
 
